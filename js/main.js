@@ -49,6 +49,10 @@ const usuarioEncontrado = arrayPersonas.find(
   (persona) => persona.nombre === nombreUsuario
 );
 
+// saludo al usuario registrado
+
+const pregunta2 = prompt("Hola " + nombreUsuario);
+
 // muestro los datos del usuario encontrado en la consola
 
 console.log(usuarioEncontrado.nombre);

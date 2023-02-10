@@ -1,8 +1,9 @@
 // pre entrega 2
 
-// Creo base de datos de usuarios registrados:
+// Construyo base de datos de usuarios registrados:
 
-// creo clase persona
+// construyo class Persona
+
 class Persona {
   constructor(nombre, telefono, email) {
     this.nombre = nombre;
@@ -18,13 +19,46 @@ const persona2 = new Persona("Silvana", 1145783659, "silvina@gmail.com");
 const persona3 = new Persona("Candela", 1126354856, "candela@gamil.com");
 const persona4 = new Persona("Julieta", 1123658954, "julieta@gmail.com");
 
-// construyo clase Comida para base de datos
+// le doy la bienvenida al usuario
+
+const saludo = prompt("Bienvenido!");
+
+// le pregunto al usuario si esta registrado
+
+const pregunta1 = prompt("¿Esta registrado?");
+
+// contesta que si, le pido al usuario que ingrese su nombre para verificar si esta o no registrado
+
+/* const nombreUsuario = prompt("Ingrese su nombre:");
+
+// busco al usuario en la base de datos que constui
+
+const usuarioEncontrado = Persona.find(
+ (persona) => persona.nombre === nombreUsuario);
+
+// muestro los datos del usuario encontrado en la consola
+
+console.log(usuarioEncontrado.nombre);
+console.log(usuarioEncontrado.telefono);
+console.log(usuarioEncontrado.email);
+*/
+// construyo class Comida para base de datos
 
 class Comida {
   constructor(nombre, precio, categoria) {
     this.nombre = nombre;
     this.precio = precio;
     this.categoria = categoria;
+
+    // creo combo 1
+
+    //this.getPrecio = (this.comida4 + this.comida5);
+
+    // creo combo 2
+
+    // creo combo 3
+
+    // creo combo 4
   }
 }
 
@@ -39,7 +73,17 @@ const comida6 = new Comida("Chocolatada", 50, "Desayuno");
 const comida7 = new Comida("Coca", 40, "Almuerzo");
 const comida8 = new Comida("Jugo", 35, "Almuerzo");
 
-// construyo funcion para los distintos combos
+// mostrar en consola los precios de los combos
+
+// muestro combo 1
+
+// muestro combo 2
+
+// muestro combo 3
+
+// muestro combo 4
+
+// construyo class Combos
 
 class Combo {
   constructor(item, categoria, precio) {
@@ -50,43 +94,26 @@ class Combo {
 }
 
 // construyo array global
+
 const arrayGlobal = [];
 
-// construyo distintos combos
+// construyo variables de los distintos combos
+
 const combo1 = new Combo("2 Medialunas + 1 Cafe", "Desayuno", 80);
 const combo2 = new Combo("1 Alfajor + 1 Chocolatada", "Desayuno", 85);
 const combo3 = new Combo("2 Empanadas + 1 Jugo", "Almuerzo", 135);
 const combo4 = new Combo("1 Sandwcich + 1 Coca-Cola", "Almuerzo", 120);
 
-// pusheo a un array global los combos
+// pusheo a un array global los combos creados
+
 arrayGlobal.push(combo1, combo2, combo3, combo4);
 
 // muestro los combos en la consola
+
 console.log(arrayGlobal);
 
 // operaciones de los combos
-
-/*const combo1 = new Combo ([
-    new items = ("2 Empanadas", 100),
-    new items = ("1 Jugo", 35), 
-])
-
-const combo2 = new Combo ([
-    new items = ("1 Sandwich" , 80),
-    new items = ("1 Coca cola", 40),
-])
-
-const combo3 = new Combo ([
-    new items = ("2 Medialunas", 40),
-    new items = ("1 Cafe", 40),
-])
-
-const combo4 = new Combo ([
-    new items = ("1 Alfajor", 35),
-    new items = ("1 Chocolatada" , 50),
-])*/
-
-/* const combos = prompt(
+const combos = prompt(
   "Elija uno de nuestros combos para desayuno o almuerzo: Combo 1 - Combo 2 - Combo 3 - Combo 4"
 );
 
@@ -119,4 +146,3 @@ switch (combos) {
         "si quiere otro tipo de combo, puede comunicarse con nosotros para un valor personalizado")
     );
 }
-*/

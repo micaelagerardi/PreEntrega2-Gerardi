@@ -12,12 +12,24 @@ class Persona {
   }
 }
 
+const arrayPersonas = [];
+
 // construyo a 4 personas para base de datos
 
 const persona1 = new Persona("Ramiro", 1162359653, "ramiro@gmail.com");
 const persona2 = new Persona("Silvana", 1145783659, "silvina@gmail.com");
 const persona3 = new Persona("Candela", 1126354856, "candela@gamil.com");
 const persona4 = new Persona("Julieta", 1123658954, "julieta@gmail.com");
+
+// pusheo a un array global los combos creados
+
+arrayPersonas.push(persona1, persona2, persona3, persona4);
+
+// muestro los combos en la consola
+
+//console.log(Personas);
+
+// construyo a 4 personas para base de datos
 
 // le doy la bienvenida al usuario
 
@@ -49,16 +61,6 @@ class Comida {
     this.nombre = nombre;
     this.precio = precio;
     this.categoria = categoria;
-
-    // creo combo 1
-
-    //this.getPrecio = (this.comida4 + this.comida5);
-
-    // creo combo 2
-
-    // creo combo 3
-
-    // creo combo 4
   }
 }
 
@@ -72,16 +74,6 @@ const comida5 = new Comida("Cafe", 40, "Desayuno");
 const comida6 = new Comida("Chocolatada", 50, "Desayuno");
 const comida7 = new Comida("Coca", 40, "Almuerzo");
 const comida8 = new Comida("Jugo", 35, "Almuerzo");
-
-// mostrar en consola los precios de los combos
-
-// muestro combo 1
-
-// muestro combo 2
-
-// muestro combo 3
-
-// muestro combo 4
 
 // construyo class Combos
 

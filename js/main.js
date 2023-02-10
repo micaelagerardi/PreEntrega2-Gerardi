@@ -41,19 +41,20 @@ const pregunta1 = prompt("¿Esta registrado?");
 
 // contesta que si, le pido al usuario que ingrese su nombre para verificar si esta o no registrado
 
-/* const nombreUsuario = prompt("Ingrese su nombre:");
+const nombreUsuario = prompt("Ingrese su nombre:");
 
 // busco al usuario en la base de datos que constui
 
-const usuarioEncontrado = Persona.find(
- (persona) => persona.nombre === nombreUsuario);
+const usuarioEncontrado = arrayPersonas.find(
+  (persona) => persona.nombre === nombreUsuario
+);
 
 // muestro los datos del usuario encontrado en la consola
 
 console.log(usuarioEncontrado.nombre);
 console.log(usuarioEncontrado.telefono);
 console.log(usuarioEncontrado.email);
-*/
+
 // construyo class Comida para base de datos
 
 class Comida {

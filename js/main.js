@@ -2,7 +2,7 @@
 
 // Construyo base de datos de usuarios registrados:
 
-// construyo class Persona
+// creo Class Persona para base de datos
 
 class Persona {
   constructor(nombre, telefono, email) {
@@ -12,24 +12,24 @@ class Persona {
   }
 }
 
+// construyo array personas
+
 const arrayPersonas = [];
 
-// construyo a 4 personas para base de datos
+// construyo variables de las distintas personas
 
 const persona1 = new Persona("Ramiro", 1162359653, "ramiro@gmail.com");
 const persona2 = new Persona("Silvana", 1145783659, "silvina@gmail.com");
 const persona3 = new Persona("Candela", 1126354856, "candela@gamil.com");
 const persona4 = new Persona("Julieta", 1123658954, "julieta@gmail.com");
 
-// pusheo a un array global los combos creados
+// pusheo a un array global a las personas creadas
 
 arrayPersonas.push(persona1, persona2, persona3, persona4);
 
-// muestro los combos en la consola
+// muestro los datos de las personas en la consola
 
-//console.log(Personas);
-
-// construyo a 4 personas para base de datos
+console.log(arrayPersonas);
 
 // le doy la bienvenida al usuario
 
